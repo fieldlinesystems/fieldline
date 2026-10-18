@@ -15,11 +15,22 @@ body{margin:0;background:#F3F1EA}
 a{color:#1C211D}a:hover{color:#4A5D43}
 .ph{background-color:#DAD6C9;background-image:repeating-linear-gradient(135deg,rgba(28,33,29,0.05) 0 2px,transparent 2px 14px)}
 .ph-dark{background-color:#2A302B;background-image:repeating-linear-gradient(135deg,rgba(243,241,234,0.05) 0 2px,transparent 2px 14px)}
-.grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.grid-svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:24px}
+.grid-svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
 .grid-work{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
 .nav-links{display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-@media (max-width:720px){.nav-links{display:none}.hero-h{font-size:44px !important}.sec-h{font-size:34px !important}}
+@media (max-width:720px){.nav-links{display:flex;gap:0}.nav-links a:not(.nav-cta){display:none}.nav-cta{padding:10px 16px !important;font-size:14px;white-space:nowrap}
+section[aria-label="Credentials"] > div{padding:18px 0 !important;gap:10px 24px !important}
+.hero-media > div{font-size:10px !important;max-width:calc(100% - 32px)}.hero-h{font-size:44px !important}.sec-h{font-size:34px !important}
+header nav,section,footer{padding-left:20px !important;padding-right:20px !important}
+.hero-media{aspect-ratio:4/3 !important;min-height:0 !important}
+.contact-card{padding:36px 22px !important}.contact-btns{min-width:0 !important;width:100%}
+.contact-btn{font-size:16px !important;padding:16px 18px !important;min-width:0;overflow-wrap:anywhere}
+header nav{flex-wrap:nowrap !important;gap:12px !important;padding-top:14px !important;padding-bottom:14px !important}
+header nav > a:first-child span{font-size:15px !important;white-space:nowrap}
+#services{padding-top:64px !important}#process,#about{padding-top:56px !important}.contact-sec{padding-top:56px !important}
+#services > div:first-child{margin-bottom:32px !important}}
+@media (max-width:359px){header nav > a:first-child span{font-size:13px !important}header nav > a:first-child svg{width:28px;height:28px}header nav{gap:8px !important}.nav-cta{padding:9px 12px !important;font-size:13px !important}}
 </style>
 <style>html{scroll-behavior:smooth}*{box-sizing:border-box}</style>
 </head>
@@ -37,7 +48,7 @@ a{color:#1C211D}a:hover{color:#4A5D43}
         <a href="#services" style="text-decoration: none">Services</a>
         <a href="#process" style="text-decoration: none">How it works</a>
         <a href="#about" style="text-decoration: none">About</a>
-        <a href="#contact" style="text-decoration: none; background: #1C211D; color: #F3F1EA; padding: 12px 20px; border-radius: 6px">Get in touch</a>
+        <a href="#contact" class="nav-cta" style="text-decoration: none; background: #1C211D; color: #F3F1EA; padding: 12px 20px; border-radius: 6px">Get in touch</a>
       </div>
     </nav>
   </header>
@@ -57,7 +68,7 @@ a{color:#1C211D}a:hover{color:#4A5D43}
       </div>
     </div>
 
-    <div class="ph-dark" style="margin-top: 48px; border-radius: 10px; aspect-ratio: 16 / 7; min-height: 280px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center">
+    <div class="ph-dark hero-media" style="margin-top: 48px; border-radius: 10px; aspect-ratio: 16 / 7; min-height: 280px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center">
       <video src="assets/hero.mp4" poster="assets/hero.jpg" autoplay muted loop playsinline aria-label="Aerial flyover of a finished backyard property" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>
       <div style="position: absolute; left: 16px; bottom: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #F3F1EA; letter-spacing: 0.08em; background: rgba(28,33,29,0.7); padding: 6px 10px; border-radius: 4px">40.17° N · 74.92° W · BUCKS COUNTY, PA</div>
     </div>
@@ -67,7 +78,8 @@ a{color:#1C211D}a:hover{color:#4A5D43}
   <section aria-label="Credentials" style="border-top: 1px solid #D9D5C8; border-bottom: 1px solid #D9D5C8; background: #ECE9E0">
     <div style="max-width: 1280px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #3B423C">
       <span>FAA Part 107 certified pilot</span>
-      <span>[Insurance coverage]</span>
+      <span>FAA airspace authorization (LAANC)</span>
+      <span>Remote ID compliant aircraft</span>
       <span>Based in Bucks County, PA</span>
     </div>
   </section>
@@ -120,16 +132,16 @@ a{color:#1C211D}a:hover{color:#4A5D43}
   <section id="process" style="max-width: 1280px; margin: 0 auto; padding: 88px 32px 40px">
     <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D43">02 · How it works</div>
     <h2 class="sec-h" style="margin: 14px 0 40px; font-size: 48px; line-height: 1.08; font-weight: 700; letter-spacing: -0.015em">Simple from first call to final files.</h2>
-    <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+    <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 24px">
       <li style="border-top: 2px solid #1C211D; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
         <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C8642A; font-weight: 500">01</span>
         <h3 style="margin: 0; font-size: 22px; font-weight: 700">Plan the shot</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3B423C">A quick call about the site, the goal and where the footage will live. Airspace and permissions are checked before anyone shows up.</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3B423C">A quick call about the site, the goal and where the footage will live. Airspace is checked and FAA authorization secured before anyone shows up.</p>
       </li>
       <li style="border-top: 2px solid #1C211D; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
         <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C8642A; font-weight: 500">02</span>
         <h3 style="margin: 0; font-size: 22px; font-weight: 700">Fly the site</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3B423C">Licensed, careful flights scheduled around your crew and the light. One visit or recurring progress runs.</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3B423C">FAA compliant flights under Part 107, scheduled around your crew and the light. One visit or recurring progress runs.</p>
       </li>
       <li style="border-top: 2px solid #1C211D; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
         <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C8642A; font-weight: 500">03</span>
@@ -148,30 +160,30 @@ a{color:#1C211D}a:hover{color:#4A5D43}
       <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D43">03 · About</div>
         <h2 class="sec-h" style="margin: 0; font-size: 44px; line-height: 1.1; font-weight: 700; letter-spacing: -0.015em">Built by someone who has spent a career shipping technology.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3B423C">Fieldline Systems was founded by Chris Lindinger, an FAA Part 107 certified pilot with more than a decade of experience building and rolling out technology for retail brands. That background shows up in the details: clear plans, reliable delivery and files that fit how your business actually works.</p>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3B423C">Fieldline Systems was founded by Chris Lindinger, an FAA Part 107 certified pilot with two decades of experience building and rolling out software for businesses of every size. That background shows up in the details: clear plans, reliable delivery and files that fit how your business actually works.</p>
         <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3B423C">For scanning and measurement work, Fieldline partners with a reality capture specialist experienced in LiDAR, Leica and Trimble systems, and scan to BIM modeling for architecture and civil engineering clients. One point of contact, with the right expertise behind every deliverable.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" style="padding: 88px 32px 0">
-    <div style="max-width: 1280px; margin: 0 auto; background: #1C211D; color: #F3F1EA; border-radius: 14px; padding: 64px 48px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-end">
+  <section id="contact" class="contact-sec" style="padding: 88px 32px 0">
+    <div class="contact-card" style="max-width: 1280px; margin: 0 auto; background: #1C211D; color: #F3F1EA; border-radius: 14px; padding: 64px 48px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-end">
       <div style="max-width: 620px; display: flex; flex-direction: column; gap: 16px">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C4AE">Let's talk</div>
         <h2 class="sec-h" style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 700; letter-spacing: -0.015em">Have a site worth seeing from above?</h2>
         <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #CFCBBF">Call, text or email with the address and what you are after. You will hear back within one business day.</p>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 12px; min-width: 260px">
-        <a href="tel:+12159482749" style="display: flex; align-items: center; gap: 14px; background: #F3F1EA; color: #1C211D; text-decoration: none; padding: 18px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
+      <div class="contact-btns" style="display: flex; flex-direction: column; gap: 12px; min-width: 260px">
+        <a class="contact-btn" href="tel:+12159482749" style="display: flex; align-items: center; gap: 14px; background: #F3F1EA; color: #1C211D; text-decoration: none; padding: 18px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
           <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1C211D" stroke-width="2" stroke-linejoin="round"><path d="M5 3 H9 L11 8 L8.5 9.5 C9.5 11.8 12.2 14.5 14.5 15.5 L16 13 L21 15 V19 C21 20 20 21 19 21 C10.7 21 3 13.3 3 5 C3 4 4 3 5 3 Z"></path></svg>
           Call 215.948.2749
         </a>
-        <a href="sms:+12159482749" style="display: flex; align-items: center; gap: 14px; border: 1.5px solid #F3F1EA; color: #F3F1EA; text-decoration: none; padding: 17px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
+        <a class="contact-btn" href="sms:+12159482749" style="display: flex; align-items: center; gap: 14px; border: 1.5px solid #F3F1EA; color: #F3F1EA; text-decoration: none; padding: 17px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
           <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#F3F1EA" stroke-width="2" stroke-linejoin="round"><path d="M4 5 H20 V16 H10 L5 20 V16 H4 Z"></path></svg>
           Text 215.948.2749
         </a>
-        <a href="mailto:chris@fieldlinesystems.com" style="display: flex; align-items: center; gap: 14px; border: 1.5px solid #F3F1EA; color: #F3F1EA; text-decoration: none; padding: 17px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
+        <a class="contact-btn" href="mailto:chris@fieldlinesystems.com" style="display: flex; align-items: center; gap: 14px; border: 1.5px solid #F3F1EA; color: #F3F1EA; text-decoration: none; padding: 17px 22px; border-radius: 8px; font-weight: 600; font-size: 18px">
           <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#F3F1EA" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7 L12 13 L21 7"></path></svg>
           chris@fieldlinesystems.com
         </a>
