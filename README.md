@@ -1,6 +1,6 @@
 # Fieldline Systems website
 
-A one page static site for Fieldline Systems LLC: drone imaging, inspections, 3D scanning and measurement in Bucks County, PA.
+A one page static site for Fieldline Systems LLC: drone photography, video and inspections in Bucks County, PA.
 
 - `index.html` holds the whole page (styles inline, fonts from Google Fonts)
 - `assets/` holds the hero video loop and its poster image

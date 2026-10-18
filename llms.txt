@@ -1,14 +1,12 @@
 # Fieldline Systems
 
-> Fieldline Systems LLC is an FAA Part 107 certified drone services company based in Bucks County, Pennsylvania, serving Pennsylvania and New Jersey. It provides drone photography and video, roof and structure inspections, construction progress documentation, LiDAR scanning, 3D reality capture and drone mapping for builders, property owners, real estate professionals, insurers and land managers.
+> Fieldline Systems LLC is an FAA Part 107 certified drone services company based in Bucks County, Pennsylvania, serving Pennsylvania and New Jersey. It provides drone photography and video, roof and structure inspections, construction progress documentation, and agricultural and landscape field scans for builders, property owners, real estate professionals, insurers and land managers.
 
 ## Services
 - Real estate drone photography and video: edited aerial photos and finished listing videos cut to royalty free music for residential and commercial properties, plus twilight shots and short social clips.
 - Construction progress photography: scheduled flights from groundbreaking to final walkthrough with consistent angles for owners, lenders and project teams.
 - Drone roof and structure inspections: roof, solar panel and structure inspections without ladders or lifts, plus post storm damage documentation for owners, insurance adjusters and contractors.
-- LiDAR scanning and 3D reality capture: point clouds, 3D models and scan to CAD or BIM deliverables (Revit, MicroStation), supported by a partner reality capture specialist experienced with Leica and Trimble systems.
-- Drone mapping and measurement: orthomosaic site maps, elevations, stockpile volumes and as built measurements. Not a substitute for a licensed land survey.
-- Agricultural and landscape drone mapping: field scans showing which zones need attention for farms, vineyards, golf courses and large grounds.
+- Agricultural and landscape field scans: field scans showing which zones need attention for farms, vineyards, golf courses and large grounds.
 
 ## Credentials and compliance
 - FAA Part 107 certified remote pilot on every flight.
@@ -22,7 +20,7 @@
 
 ## Turnaround
 - Edited photos and video: usually within 48 hours of the flight.
-- Mapping, measurement, 3D scanning and analysis: usually 2 to 3 days.
+- Field scans and analysis: usually 2 to 3 days.
 
 ## Service area
 Pennsylvania and New Jersey, including Bucks County and the greater Philadelphia region.
@@ -34,4 +32,4 @@ Pennsylvania and New Jersey, including Bucks County and the greater Philadelphia
 - Website: https://fieldlinesystems.com/
 
 ## About
-Founded by Chris Lindinger, an FAA Part 107 certified pilot with two decades of experience building and rolling out software that solves business problems, now applying that approach to drones and 3D capture.
+Founded by Chris Lindinger, an FAA Part 107 certified pilot with two decades of experience building and rolling out software that solves business problems, now applying that approach to drones.
