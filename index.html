@@ -7,6 +7,7 @@
 <meta name="description" content="FAA Part 107 certified drone services across Pennsylvania and New Jersey: real estate and construction photography and video, drone roof inspections, and agricultural and landscape field scans. Based in Bucks County, PA.">
 <link rel="canonical" href="https://fieldlinesystems.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#1C211D">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
@@ -26,7 +27,7 @@
  "alternateName": "Fieldline Systems",
  "url": "https://fieldlinesystems.com/",
  "image": "https://fieldlinesystems.com/assets/hero.jpg",
- "logo": "https://fieldlinesystems.com/favicon.svg",
+ "logo": "https://fieldlinesystems.com/logo.png",
  "description": "Drone photography and video, roof and structure inspections, construction progress documentation, and agricultural and landscape field scans across Pennsylvania and New Jersey. FAA Part 107 certified.",
  "telephone": "+1-215-948-2749",
  "email": "chris@fieldlinesystems.com",
@@ -223,10 +224,10 @@ header nav,section,footer{padding-left:20px !important;padding-right:20px !impor
 .contact-card{padding:36px 22px !important}.contact-btns{min-width:0 !important;width:100%}
 .contact-btn{font-size:16px !important;padding:16px 18px !important;min-width:0;overflow-wrap:anywhere}
 header nav{flex-wrap:nowrap !important;gap:12px !important;padding-top:14px !important;padding-bottom:14px !important}
-header nav > a:first-child span{font-size:15px !important;white-space:nowrap}
+header nav > a:first-child{gap:8px !important}header nav > a:first-child span{white-space:nowrap}.brand-word{font-size:17px !important}.brand-sub{font-size:10px !important;letter-spacing:0.3em !important}.brand-mark{width:38px;height:38px}
 #services{padding-top:64px !important}#process,#about{padding-top:56px !important}.contact-sec{padding-top:56px !important}
 #services > div:first-child{margin-bottom:32px !important}}
-@media (max-width:359px){header nav > a:first-child span{font-size:13px !important}header nav > a:first-child svg{width:28px;height:28px}header nav{gap:8px !important}.nav-cta{padding:9px 12px !important;font-size:13px !important}}
+@media (max-width:359px){.brand-word{font-size:15px !important}.brand-sub{display:none}header nav > a:first-child svg{width:28px;height:28px}header nav{gap:8px !important}.nav-cta{padding:9px 12px !important;font-size:13px !important}}
 </style>
 <style>html{scroll-behavior:smooth}*{box-sizing:border-box}</style>
 </head>
@@ -236,9 +237,10 @@ header nav > a:first-child span{font-size:15px !important;white-space:nowrap}
   <!-- NAV -->
   <header style="border-bottom: 1px solid #D9D5C8">
     <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
-      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #1C211D">
-        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="6" fill="none" stroke="#1C211D" stroke-width="2"></rect><path d="M8 24 L8 10 L20 10 M8 17 L17 17" fill="none" stroke="#1C211D" stroke-width="2.4" stroke-linecap="round"></path><circle cx="25" cy="24" r="3" fill="#C8642A"></circle></svg>
-        <span style="font-weight: 700; font-size: 18px; letter-spacing: 0.02em">FIELDLINE SYSTEMS</span>
+      <a href="#top" aria-label="Fieldline Systems home" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #1C211D">
+        <svg class="brand-mark" width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><path d="M18 48 V12 H48" fill="none" stroke="#1C211D" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="18" cy="54.5" r="3.6" fill="none" stroke="#1C211D" stroke-width="3"></circle><path d="M18 32 H38" fill="none" stroke="#1C211D" stroke-width="4.5" stroke-dasharray="4.5 5" stroke-linecap="round"></path><circle cx="46" cy="32" r="5.5" fill="#C8642A"></circle></svg>
+        <span class="brand-word" style="font-weight: 800; font-size: 20px; letter-spacing: 0.03em">FIELDLINE</span>
+        <span class="brand-sub" style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.4em; color: #4A5D43">SYSTEMS</span>
       </a>
       <div class="nav-links" style="font-size: 15px; font-weight: 500">
         <a href="#services" style="text-decoration: none">Services</a>
@@ -252,9 +254,9 @@ header nav > a:first-child span{font-size:15px !important;white-space:nowrap}
 
   <!-- HERO -->
   <section id="top" style="max-width: 1280px; margin: 0 auto; padding: 72px 32px 48px">
-    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D43; display: flex; gap: 10px; align-items: center">
-      <span style="width: 8px; height: 8px; border-radius: 50%; background: #C8642A; display: inline-block"></span>
-      Aerial photo · Video · Inspections
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5D43; display: flex; gap: 10px; align-items: flex-start">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: #C8642A; display: inline-block; flex-shrink: 0; margin-top: 0.42em"></span>
+      Fieldline Aerial · Photo · Video · Inspections
     </div>
     <h1 class="hero-h" style="margin: 20px 0 0; font-size: 76px; line-height: 1.02; font-weight: 800; letter-spacing: -0.02em; max-width: 1000px">The view from above, for the people who build things.</h1>
     <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between; margin-top: 28px">
